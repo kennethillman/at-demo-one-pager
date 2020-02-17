@@ -2,8 +2,16 @@
 
 An Active Talents Proof of Concept
 
+## To do
 
-
+* Clean up base design
+* Navigation 
+..* Simpel and clean "scroll to" menu
+..* Active link
+..* Scoll to if URL is hashed + set active link
+* Slices
+..* Reference - Make possible slider
+..* Contact form - Formspree.io
 
 ## Build Setup
 
