@@ -4,21 +4,21 @@ An Active Talents Proof of Concept
 
 ## To do
 
-###Prismic
+### Prismic
 * New endpoint
 
-###Netlify
+### Netlify
 * Autobuiilds from Github + Prismic
 
-###Design
+### Design
 * Clean up
 
-###Navigation 
+### Navigation 
 * Simpel and clean "scroll to" menu
 * Active link
 * Scoll to if URL is hashed + set active link
 
-###Slices
+### Slices
 * Google maps / Contact info
   * Style it
 * Contact form
