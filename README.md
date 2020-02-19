@@ -6,7 +6,7 @@ An Active Talents Proof of Concept
 
 ### Prismic
 * ~~New endpoint~~
-* Chgange config to env vars
+* Change config to env vars
 
 ### Netlify
 * Autobuilds from Github + Prismic
@@ -29,7 +29,7 @@ An Active Talents Proof of Concept
 * References
   * Slider if multiple references
 * Clients
-  * Slider if multiple references
+  * Add logos (Svg)
 * Content - Image (Big)
   * ~~Text - Photograher~~
   * ~~Text - Description~~
