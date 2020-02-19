@@ -4,37 +4,41 @@ An Active Talents Proof of Concept
 
 ## To do
 
-#### Prismic
-* New endpoint
+### Prismic
+* ~~New endpoint~~
+* Chgange config to env vars
 
-#### Netlify
-* Autobuiilds from Github + Prismic
+### Netlify
+* Autobuilds from Github + Prismic
+* Env vars
 
-#### Design
+### Design
 * Clean up
 
-#### Navigation 
+### Navigation 
 * ~~Simpel and clean "scroll to" menu~~
 * ~~Active link~~
-* ~~Scoll to if URL is hashed + set active link~~
+* ~~On load, if URL is hashed scroll to + set active link~~
+* [Secondary for MVP] While scrolling set active link
 
-#### Slices
-* **Google maps/Contact info**
+### Slices
+* Google maps/Contact info
   * Style it
 * Contact form
-  * Formspree.io
+  * ~~Formspree.io~~
 * References
   * Slider if multiple references
 * Clients
   * Slider if multiple references
-* Content - Image
-  * Size - Full width
-  * Siz - Content width
-  * Text - Photograher
-  * Text - Description
+* Content - Image (Big)
+  * ~~Text - Photograher~~
+  * ~~Text - Description~~
+  * [Secondary for MVP] Srcset (Responsive images)
+  * [Secondary for MVP] Size (Full width, Content width)
+  * [LAB] Left/right in content next top text?
 * Content - Text
-  * One column (center)
-  * Two columns
+  * ~~One column (center)~~
+  * ~~Two columns~~
 
 
 ## Build Setup
