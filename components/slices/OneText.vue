@@ -85,6 +85,24 @@ export default {
       }
 
     }
+    .button {
+      margin-top: 2em;
+    }
+
+    // 600px
+    @media screen and (min-width: 600px)  {
+      .button {
+        text-align: center;
+      }
+    }
+
+    // 768px
+    @media screen and (min-width: 768px)  {
+      .button {
+         margin-top: 3em;
+      }
+    }
+
   }
 
 </style>
