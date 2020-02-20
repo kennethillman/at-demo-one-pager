@@ -7,7 +7,7 @@
 <style lang="scss">
 
   .site-logo {
-    fill: $purple;
+    fill: $black;
   }
 
 </style>

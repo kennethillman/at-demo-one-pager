@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5275a3c9-a9ab-4e76-8bc7-2ebb3346176d/deploy-status)](https://app.netlify.com/sites/at-demo-onepager/deploys)
+
 # One pager
 
 An Active Talents Proof of Concept
@@ -30,7 +32,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 * ~~Change config to env vars~~
 
 ### Netlify
-* Autobuilds from Github + Prismic
+* ~~Autobuilds from Github + Prismic~~
 * ~~Env vars~~
 
 ### Design
@@ -40,7 +42,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 * ~~Simpel and clean "scroll to" menu~~
 * ~~Active link~~
 * ~~On load, if URL is hashed scroll to + set active link~~
-* [Secondary for MVP] While scrolling set active link
+* [Secondary for MVP] While scrolling set/change active link
 
 ### Slices
 * Google maps/Contact info
@@ -65,4 +67,3 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 * Content - Text
   * ~~One column (center)~~
   * ~~Two columns~~
-  
