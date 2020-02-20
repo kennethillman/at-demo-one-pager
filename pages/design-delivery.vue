@@ -487,7 +487,7 @@ export default {
   },
   head() {
     return {
-      title: 'AT | Onpe pager | Design delivery'
+      title: 'AT | One pager | Design delivery'
     }
   }
   //  data () {
