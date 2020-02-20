@@ -14,7 +14,7 @@
         </h2>
 
         <h6 class="title -sub">
-          AT - Onepager
+          AT - One pager
         </h6>
 
         </div>
@@ -487,7 +487,7 @@ export default {
   },
   head() {
     return {
-      title: 'AT | Design delivery'
+      title: 'AT | Onpe pager | Design delivery'
     }
   }
   //  data () {
