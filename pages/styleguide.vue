@@ -10,11 +10,11 @@
         <logo/>
 
         <h2 class="title">
-          Design delivery
+          Mini Styleguide
         </h2>
 
         <h6 class="title -sub">
-          AT - One pager
+          AT - demo - One pager
         </h6>
 
         </div>
@@ -487,44 +487,10 @@ export default {
   },
   head() {
     return {
-      title: 'AT | One pager | Design delivery'
+      title: 'AT | One pager | Styleguide'
     }
   }
-  //  data () {
-  //   return {
-  //     slicess: []
-  //   };
-  // },
 
-//   async asyncData({context, error, req}) {
-//     try{
-//       const api = await Prismic.getApi(PrismicConfig.apiEndpoint, {req})
-
-//       let document = {}
-//       let _slices = []
-//       const result = await api.getSingle('startpage')
-
-//       document = result.data
-//       _slices = document.body
-//       // console.log('_slices -> ' , _slices);
-
-//       let menu = {}
-//       const topMenu = await api.getSingle('menu')
-//       menu = topMenu.data
-
-//       // Load the edit button
-//       if (process.client) window.prismic.setupEditButton()
-
-//       return {
-//         document,
-//         documentId: result.id,
-//         menu,
-//         allSlices: _slices
-//       }
-//     } catch (e) {
-//       error({ statusCode: 404, message: 'Page not found' })
-//     }
-//   }
 }
 </script>
 
