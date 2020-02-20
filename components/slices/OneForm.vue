@@ -17,7 +17,7 @@
 
     <div class="form-wrapper">
 
-      <form action="https://formspree.io/xgevzbap" method="POST" ref="form" > <!-- v-if="!sent" -->
+      <form action="https://formspree.io/meqkjwbd" method="POST" ref="form" > <!-- v-if="!sent" -->
         <div class="gc contact-form">
           <div class="g-5 g-push-1 text">
             <div>
@@ -137,6 +137,16 @@ export default {
       opacity: 1;
       position: relative;
       z-index: 2;
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover, 
+      input:-webkit-autofill:focus,
+      textarea:-webkit-autofill,
+      textarea:-webkit-autofill:hover,
+      textarea:-webkit-autofill:focus {
+        background: transparent;
+      }
+
     }
 
     .form-wrapper {
