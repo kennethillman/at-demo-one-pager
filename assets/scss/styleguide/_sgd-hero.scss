@@ -170,25 +170,12 @@
         font-size: 22px;
         transition: color .375s ease-in-out;
         &.-sub {
-          color: $pink;
-          font-size: 12px;
-          transition: color .375s ease-in-out;
-        }
-      }
-      &:hover {
-        svg {
-          fill: $orange;
-          transition: fill 2.675s ease-in-out;
-        }
-        .title {
           color: $orange;
-          transition: color 2.675s ease-in-out;
-          &.-sub {
-            color: $blue;
-            transition: color 2.675s ease-in-out;
-          }
+          font-size: 12px;
+          //transition: color .375s ease-in-out;
         }
       }
+
     }
 
 

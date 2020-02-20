@@ -3,55 +3,25 @@
   <section class="slice-one-text-image site-grid" :class="[theme,imagePosition]" :id="anchor">
     <div>
 
-
-
-    <div class="teaser-image col">
-      <figure>
-        <img :src="imageUrl">
-        <div class="triangel"></div>
-      </figure>
-    </div>
-
-    <div class="teaser-text col">
-      <div class="col-body">
-        <div class="header-primary">
-          <div class="anchor">Anchor</div> <div class="label">Slice</div>
-        </div>
-        <div class="header">{{ title }}</div>
-        <template v-if="link">
-          <a :href="link" class="btn" target="_blank">{{linkLabel}}</a> <br>
-        </template>
+      <div class="teaser-image col">
+        <figure>
+          <img :src="imageUrl">
+          <div class="triangel"></div>
+        </figure>
       </div>
-    </div>
+
+      <div class="teaser-text col">
+        <div class="col-body">
+          <div class="header-primary">
+            <div class="anchor">Anchor</div> <div class="label">Slice</div>
+          </div>
+          <div class="header">{{ title }}</div>
+          <div><prismic-rich-text :field="sliceRaw.primary.text"/></div>
+        </div>
+      </div>
 
     </div>
-
   </section>
-
-<!--   <section class="slice-one-text-image site-grid -theme-dark -image-right">
-
-    <div class="teaser-image col">
-
-        <img src="https://images.unsplash.com/photo-1578540244871-974894517b7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3925&q=80">
-
-    </div>
-
-    <div class="teaser-text col">
-      <div class="col-body">
-        <div class="header-primary">
-          <div class="anchor">Anchor</div> <div class="label">Slice</div>
-        </div>
-        <div class="header">At vero eos et accusamus et iusto odio dignissimos.</div>
-        <a href="#" class="btn">Lorum ipsum</a>
-      </div>
-    </div>
-
-  </section> -->
-
-
-  <!-- <prismic-rich-text :field="sliceRaw.primary.title1"/> -->
-  <!-- {{sliceRaw.primary.anchor_link[0].text}} -->
-  <!-- {{sliceRaw.primary}} -->
 
 </template>
 
@@ -66,16 +36,8 @@ export default {
       theme: '-theme-' + this.sliceRaw.primary.theme.toLowerCase() || false,
       imagePosition: '-image-' + this.sliceRaw.primary.image_position.toLowerCase() || false,
       title: this.sliceRaw.primary.title1[0].text || false,
-      imageUrl: this.sliceRaw.primary.image.url || false,
-      link: this.sliceRaw.primary.link.url || false,
-      linkLabel: this.sliceRaw.primary.link_label[0].text || false
+      imageUrl: this.sliceRaw.primary.image.url || false
     }
-  },
-  methods: {
-
-  },
-  created() {
-
   }
 }
 </script>
@@ -102,7 +64,7 @@ export default {
     }
 
 
-    // - - - TYPOGRAPY
+    // - - - TYPOGRAPHY
 
     .header-primary {
       text-align: left;
@@ -111,11 +73,15 @@ export default {
 
     .header {
       text-transform: uppercase;
-      font-weight: 300;
+      font-weight: 600;
       font-size: 24px;
       letter-spacing: .06em;
       margin-bottom: 24px;
       line-height: 1.14;
+      color: $black;
+      font-family: $font-oswald;
+      font-weight: 300;
+      letter-spacing: 3px;
     }
 
     // - - - TRIANGLE
@@ -187,7 +153,7 @@ export default {
 
 
       .header {
-        font-size: 24px;
+        font-size: 32px;
       }
       .col-body {
         padding: 24px;
@@ -260,7 +226,7 @@ export default {
     // 1024px
     @media screen and (min-width: 1024px)  {
       .header {
-        font-size: 32px;
+        font-size: 38px;
       }
       .col-body {
         padding: 32px;
@@ -274,10 +240,6 @@ export default {
     // 1280px
     @media screen and (min-width: 1280px)  {
 
-      .header {
-        font-size: 40px;
-        margin-bottom: 40px
-      }
       .col-body {
         padding: 56px;
       }

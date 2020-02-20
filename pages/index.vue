@@ -1,36 +1,29 @@
 <template>
-  <section class="container">
-
-    <prismic-edit-button :documentId="documentId"/>
+  <section class="at-demo-one-pager">
+    
+    <!-- Anchor  -->
     <div id="to-top"></div>
 
-    <home/>
-
-
-    <div class="menu" >
-      <top-menu :links="menu"/>
-    </div>
-
-    <div class="sgd-s-hero">
+    <!-- Header -->
+    <site-header :links="menu"/>
+ 
+    <!-- Hero -->
+    <div class="sgd-s-hero -bg-pattern-light -cover">
       <div>
         <logo/>
         <h2 class="title">{{document.title[0].text}}</h2>
         <h6 class="title -sub">{{document.preamble[0].text}}</h6>
-
-        <!-- <h6>{{allSlices}}</h6> -->
-
       </div>
     </div>
 
+    <!-- Slices -->
     <slices :slices-raw="allSlices" />
 
-    <div class="sgd-s-hero -footer">
-      <div>
-        <logo/>
-        <h2 class="title">Demo page</h2>
-        <h6 class="title -sub">by Active Talents</h6>
-      </div>
-    </div>
+    <!-- Footer -->
+    <site-footer />
+    
+    <!-- Prismic edit button -->
+    <prismic-edit-button :documentId="documentId"/>
 
   </section>
 </template>
@@ -41,23 +34,17 @@ import Prismic from "prismic-javascript"
 import PrismicConfig from "~/prismic.config.js"
 
 import Logo from '~/components/Logo.vue'
-import Home from '~/components/Home.vue'
-import topMenu   from '~/components/Menu.vue'
 import Slices   from '~/components/Slices.vue'
+import SiteHeader   from '~/components/SiteHeader.vue'
+import SiteFooter   from '~/components/SiteFooter.vue'
 
 export default {
   components: {
     Logo,
-    Home,
-    topMenu,
-    Slices
+    Slices,
+    SiteHeader,
+    SiteFooter
   },
-  //  data () {
-  //   return {
-  //     slicess: []
-  //   };
-  // },
-
   async asyncData({context, error, req}) {
     try{
       const api = await Prismic.getApi(PrismicConfig.apiEndpoint, {req})
@@ -94,30 +81,8 @@ export default {
 
   @import "~/assets/scss/styleguide/styleguide-imports.scss";
 
-  .sgd-s-grid {
-    min-height: 65vh
+  .at-demo-one-pager {
+
   }
-
-
-  // - - - EDIT BUTTON - PRISMIC
-
-  .wio-link {
-    position: fixed;
-    z-index: 10;
-    right: 40px;
-    bottom: 40px;
-  }
-
-  // - - - MENU
-
-  .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 24px;
-    z-index: 20;
-  }
-
-
 
 </style>

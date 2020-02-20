@@ -1,5 +1,6 @@
-  const pkg = require('./package')
+const pkg = require('./package')
 const PrismicConfig = require('./prismic.config')
+require('dotenv').config()
 
 module.exports = {
   mode: 'universal',
@@ -8,7 +9,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'AT - Onepager',
+    title: 'AT | Demo |  Onepager',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,7 +23,7 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap' }
     ],
     script: [
-        { innerHTML: '{ window.prismic = { endpoint: "' + PrismicConfig.apiEndpoint + '"} }' },
+        { innerHTML: '{ window.prismic = { endpoint: "' + PrismicConfig.api + '"} }' },
         { src: '//static.cdn.prismic.io/prismic.min.js' }
     ],
     __dangerouslyDisableSanitizers: ['script']
@@ -55,12 +56,13 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
     '@nuxtjs/svg-sprite',
+    'nuxt-purgecss',
+    ['@nuxtjs/dotenv', { systemvars: true }],
     ['vue-scrollto/nuxt', { duration: 675 }],
-    ['nuxt-gmaps', { key: 'AIzaSyDe2ow3YELMDerTkl5QSVitReSxBpTYAmM', }]
+    ['nuxt-gmaps', { key: process.env.GMAPS_KEY }]
   ],
 
 
@@ -72,11 +74,6 @@ module.exports = {
 
   svgSprite: {
     input: '~/assets/icons/'
-  },
-
-
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
   },
 
   // router: {

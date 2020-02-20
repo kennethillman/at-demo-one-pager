@@ -40,11 +40,6 @@
     </div>
   </section>
 
-  <!-- <prismic-rich-text :field="sliceRaw.primary.title1"/> -->
-  <!-- {{sliceRaw.primary.anchor_link[0].text}} -->
-  <!-- {{sliceRaw.primary}} -->
-
-
 </template>
 
 <script>
@@ -65,39 +60,31 @@ export default {
        colTwoText: this.sliceRaw.primary.col_two[0].text,
        colTwo: this.sliceRaw.primary.col_two
     }
-  },
-  methods: {
-    // fnTheme() {
-    //  let color = this.raw.primary.theme.toLowerCase()
-    //  let colorClass = '-theme-' + color
-    //  this.theme = colorClass
-    // }
-  },
-  created() {
-    //this.fnTheme()
   }
 }
 </script>
 
 <style lang="scss">
 
+  .slice-one-text {
+    li {
+      list-style-type: none;
+      margin-bottom: .6em;
+      font-weight: 600;
+      position: relative;
 
+      &:before {
+        content: '';
+        position: absolute;
+        background: url('../../assets/icons/tick.svg') no-repeat;
+        height: 25px;
+        width: 25px;
+        right: 100%;
+        top: 0;
+        margin-right: 8px
+      }
 
-  .button {
-    text-align: center;
-    padding: 48px 0 0;
-
-    // 768px
-    @media screen and (min-width: 768px)  {
-      padding: 72px 0 0;
-    }
-
-    // 1280px
-    @media screen and (min-width: 1280px)  {
-      padding: 96px 0 0;
     }
   }
-
-
 
 </style>

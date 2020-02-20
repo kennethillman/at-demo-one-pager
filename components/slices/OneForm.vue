@@ -1,75 +1,64 @@
 <template>
 
-<section class="slice-one-form site-grid" :class="[theme,spacing]" :id="anchor">
+<section class="slice-one-form site-grid" :class="[theme,{'-sent': this.sent === 'sent', '-error': this.sent === 'error'}]" >
     <div class="gc">
 
       <div class="row">
         <div class="g-12">
           <div class="header-primary">
-
-             <div class="anchor" v-if="anchor">{{anchor}}</div> <div class="label">Slice</div>
-             <h2 class="header">
-              {{ title }}
-            </h2>
-
+             <div class="label">Slice</div>
+             <h2 class="header">{{title}}</h2>
           </div>
+       
         </div>
       </div>
 
-
-
-
-
     </div>
 
+    <div class="form-wrapper">
+
       <form action="https://formspree.io/xgevzbap" method="POST" ref="form" > <!-- v-if="!sent" -->
-            <div class="gc contact-form">
-              <div class="g-5 g-push-1 text">
-
-                  <div>
-                    <label for="name" hidden>Name:</label>
-                    <input type="text" name="name" placeholder="Your Name" ref="formname" required>
-                  </div>
-                  <div>
-                    <label for="email" hidden>Email:</label>
-                    <input type="email" name="email" placeholder="Your Email" ref="formemail" required/>
-                  </div>
-              </div>
-              <div class="g-5 text ">
-                <div>
-                  <label for="message" hidden>Message:</label>
-                  <textarea  rows="3" name="message" placeholder="Tell us, how can we help you?" ref="formmeassage"  required></textarea>
-                </div>
-              </div>
-
-              <div class="g-12 -text-center  contact-send"><br>
-                <div class="btn" @click="submitForm">Send</div></div>
+        <div class="gc contact-form">
+          <div class="g-5 g-push-1 text">
+            <div>
+              <label for="name" hidden>Name:</label>
+              <input type="text" name="name" placeholder="Your Name" ref="formname" required>
             </div>
+            <div>
+              <label for="email" hidden>Email:</label>
+              <input type="email" name="email" placeholder="Your Email" ref="formemail" required/>
+            </div>
+          </div>
+          <div class="g-5 text ">
+            <div>
+              <label for="message" hidden>Message:</label>
+              <textarea  rows="3" name="message" placeholder="Tell us, how can we help you?" ref="formmeassage"  required></textarea>
+            </div>
+          </div>
+          <div class="g-12 -text-center  contact-send"><br>
+            <div class="btn" @click="submitForm">Send</div>
+          </div>
+        </div>
       </form>
 
 
-        <!-- Thanks -->
-        <div class="gc contact-thankyou" >
-          <div class="g-12">
-            <h2 class="header-primary -in-view">Thank you!</h2>
-            <p>We will get back to you ASAP.</p>
-          </div>
-        </div>
+      <!-- Thanks -->
+      <div class="contact-thankyou" >
+        <h2 class="header-primary -in-view">{{ sliceRaw.primary.thank_you_title[0].text }}</h2>
+        <p>{{ sliceRaw.primary.thank_you_meassage[0].text }}</p>
+      </div>
 
-        <!-- Error -->
-        <div class="gc contact-error" >
-          <div class="g-12">
-            <h2 class="header-primary -in-view">Oops! An error!</h2>
-            <p>Please use our direct e-mails below.</p>
-          </div>
-        </div>
+      <!-- Error -->
+      <div class="contact-error" >
+        <h2 class="header-primary -in-view">{{ sliceRaw.primary.error_title[0].text }}</h2>
+        <p>{{ sliceRaw.primary.error_meassage[0].text }}</p>
+      </div>
+
+    </div>
+
+    <!-- <svg-icon  name="activetalents-filled" /> -->
 
   </section>
-
-  <!-- <prismic-rich-text :field="sliceRaw.primary.title1"/> -->
-  <!-- {{sliceRaw.primary.anchor_link[0].text}} -->
-  <!-- {{sliceRaw.primary}} -->
-
 
 </template>
 
@@ -80,23 +69,32 @@ export default {
   data() {
     return {
        raw: this.sliceRaw,
-       // anchor: this.sliceRaw.primary.anchor[0].text || false,
-       // theme: '-theme-' + this.sliceRaw.primary.theme.toLowerCase() || false,
-       // spacing: '-spacing-' + this.sliceRaw.primary.spacing.toLowerCase() || false,
-       // title: this.sliceRaw.primary.title1[0].text || false,
-       // text: this.sliceRaw.primary.text[0].text || false,
-       // textThanks: this.sliceRaw.primary.textThanks[0].text || false,
-       // textError: this.sliceRaw.primary.textError[0].text || false
-       anchor:  false,
-       theme: '-theme-dark',
-       spacing: false,
-       title: 'Contact form',
-       text:  false,
-       textThanks:  false,
-       textError:  false
+       theme: '-theme-' + this.sliceRaw.primary.theme.toLowerCase() || false,
+       title: this.sliceRaw.primary.title1[0].text || false,
+       text: this.sliceRaw.primary.preamble1[0].text || false,
+       sent: false,
+       formData: false
     }
   },
   methods: {
+    submitForm(ev) {
+      ev.preventDefault();
+      const form = this.$refs.form;
+      const data = new FormData(form);
+      const xhr = new XMLHttpRequest();
+      xhr.open(form.method, form.action);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          form.reset();
+          this.sent = 'sent';
+        } else {
+          this.sent = 'error';
+        }
+      };
+      xhr.send(data);
+    }
 
   },
   created() {
@@ -108,6 +106,24 @@ export default {
 <style lang="scss">
 
   .slice-one-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 64vh;
+    overflow: hidden;
+
+    > svg {
+      position: absolute;
+      fill: #1a1a1a;
+      height: 250vh;
+      width: 250vh;
+      z-index: 0;
+    }
+
+    .form-wrapper, .gc {
+      z-index: 1;
+    }
 
     strong {
       font-size: 18px;
@@ -123,11 +139,21 @@ export default {
       z-index: 2;
     }
 
+    .form-wrapper {
+      position: relative;
+    }
+
+
     .contact-thankyou,
     .contact-error {
 
+
       h2 {
         margin-bottom: 24px;
+        font-family: $font-oswald;
+        letter-spacing: .16em;
+        font-weight: 300;  
+        text-transform: uppercase;
       }
       p {
         font-size: 22px;
@@ -140,6 +166,15 @@ export default {
       top: 50px;
       transform: translate(-50%, -50px);
     }
+
+    &.-theme-dark {
+      .contact-thankyou,
+      .contact-error {
+        h2 {
+          color: $white; 
+        }
+      }
+    } 
 
     &.-sent {
       .contact-thankyou {
@@ -160,6 +195,7 @@ export default {
       .contact-form {
         opacity: 0;
         transform: translate(0, 50px);
+        z-index: -1;
       }
     }
 

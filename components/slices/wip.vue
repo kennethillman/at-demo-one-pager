@@ -1,6 +1,6 @@
 <template>
 
-<section class="slice-one-text site-grid" :class="[theme,spacing]" :id="anchor">
+  <section class="slice-one-text site-grid" :class="[theme,spacing]" :id="anchor">
     <div class="gc">
 
       <div class="row">
@@ -18,7 +18,6 @@
 
       <div class="row" >
         <div class="g-12 " >
-          <!-- {{sliceRaw.primary}}  --><br><br>
           anchor: {{anchor}} <br>
           theme: {{theme}} <br>
           spacing: {{spacing}} <br>
@@ -26,7 +25,6 @@
           text: {{text}} <br>
           link: {{link}} <br>
           linkLabel: {{linkLabel}} <br>
-          <!-- <prismic-rich-text :field="colOne"/> -->
         </div>
       </div>
 
@@ -40,10 +38,6 @@
 
     </div>
   </section>
-
-  <!-- <prismic-rich-text :field="sliceRaw.primary.title1"/> -->
-  <!-- {{sliceRaw.primary.anchor_link[0].text}} -->
-  <!-- {{sliceRaw.primary}} -->
 
 
 </template>
@@ -63,33 +57,7 @@ export default {
        link: this.sliceRaw.primary.link.url || false,
        linkLabel: this.sliceRaw.primary.link_label[0].text || false
     }
-  },
-  methods: {
-
-  },
-  created() {
-
   }
 }
 </script>
 
-<style lang="scss">
-
-  .button {
-    text-align: center;
-    padding: 48px 0 0;
-
-    // 768px
-    @media screen and (min-width: 768px)  {
-      padding: 72px 0 0;
-    }
-
-    // 1280px
-    @media screen and (min-width: 1280px)  {
-      padding: 96px 0 0;
-    }
-  }
-
-
-
-</style>

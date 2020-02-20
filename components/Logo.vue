@@ -1,12 +1,12 @@
 <template>
   <div class="logo">
-    <svg-icon class="logo" name="activetalents-line" />
+    <svg-icon class="site-logo" name="activetalents-line" />
   </div>
 </template>
 
 <style lang="scss">
 
-  .logo {
+  .site-logo {
     fill: $purple;
   }
 
