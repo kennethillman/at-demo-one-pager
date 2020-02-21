@@ -42,7 +42,7 @@ export default {
     }
 
     figure {
-      @include aspect-ratio-img(2.67,1);
+      @include aspect-ratio-img(16,9);
     }
 
     .image-text {
@@ -50,6 +50,7 @@ export default {
       position: absolute;
       right: 32px;
       bottom: 32px;
+      display: none;
       
       font-size: 12px;
       .photographer,
@@ -64,6 +65,7 @@ export default {
         color: $white;
         font-style: italic;
         font-size: 13px;
+
       }
       a {
         color: $white;
@@ -75,6 +77,38 @@ export default {
         display: inline-block;
         margin: 0;
       }
+    }
+
+    // 600px
+    @media screen and (min-width: 600px)  {
+      figure {
+        @include aspect-ratio-img(2,1);
+      }
+
+    }
+
+    // 768px
+    @media screen and (min-width: 768px)  {
+
+      figure {
+        @include aspect-ratio-img(2.35,1);
+      }
+
+      .image-text {
+        display: block;
+      }
+
+
+    }
+
+    // 1024px
+    @media screen and (min-width: 1024px)  {
+
+          figure {
+      @include aspect-ratio-img(2.67,1);
+    }
+
+
     }
 
   }

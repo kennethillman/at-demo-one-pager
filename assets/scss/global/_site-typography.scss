@@ -12,17 +12,17 @@
       line-height: 1.4;
 
       @include VP320  {
-        font-size: 14px;
+        font-size: 16px;
       }
 
        // 768px
       @include VP768  {
-        font-size: 16px;
+        font-size: 17px;
       }
 
       // 1280px
       @include VP1280  {
-        font-size: 19px;
+        font-size: 18px;
       }
 
     }
@@ -167,6 +167,7 @@ $SG: true;
     line-height: 1;
     text-transform: uppercase;
     border-radius: 2px;
+    display: none;
   }
 
 
@@ -188,6 +189,15 @@ $SG: true;
 
 
   }
+
+  // 1024px
+  @include VP1024  {
+    .label {
+      display: inline-block;
+    }
+  }
+
+
 
   // 1280px
   @include VP1280  {

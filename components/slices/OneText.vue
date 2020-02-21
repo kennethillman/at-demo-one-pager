@@ -87,14 +87,10 @@ export default {
     }
     .button {
       margin-top: 2em;
+      text-align: center;
     }
 
-    // 600px
-    @media screen and (min-width: 600px)  {
-      .button {
-        text-align: center;
-      }
-    }
+
 
     // 768px
     @media screen and (min-width: 768px)  {

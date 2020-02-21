@@ -69,14 +69,15 @@ export default {
     .header-primary {
       text-align: left;
       margin-bottom: 16px;
+      display: none;
     }
 
     .header {
       text-transform: uppercase;
       font-weight: 600;
-      font-size: 24px;
+      font-size: 30px;
       letter-spacing: .06em;
-      margin-bottom: 24px;
+      margin-bottom: 1em;
       line-height: 1.14;
       color: $black;
       font-family: $font-oswald;
@@ -151,6 +152,9 @@ export default {
         margin: 0 auto;
       }
 
+      .header-primary {
+        display: block;
+      }
 
       .header {
         font-size: 32px;

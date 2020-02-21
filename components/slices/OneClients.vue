@@ -4,7 +4,7 @@
     <div class="gc -maximize">
 
       <div class="row">
-        
+
         <div class="g-12">
           <div class="header-primary">
               <div class="label">Slice</div>
@@ -50,17 +50,34 @@ export default {
 <style lang="scss">
   
   .slice-one-clients {
-        padding-bottom: 48px;
+    padding-bottom: 48px;
 
     .logos {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
+      padding: 0 24px;
       figure {
         box-sizing: border-box;
         padding: 3vw;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 30%;
       }
     } 
+
+   @media screen and (min-width: 600px)  {
+    .logos {
+      flex-wrap: nowrap;
+      figure {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: initial;
+      }
+    }
+   }
+
   }
 
 </style>
