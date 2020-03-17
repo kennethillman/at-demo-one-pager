@@ -23,16 +23,13 @@
     </div>
 
 
-
-
-
-    <!-- STYLGUIDE -->
+    <!-- STYLEGUIDE -->
 
     <div class="styleguide-grid">
 
         <!-- LOGO -->
 
-        <section class="sgd-s-logo-display -light"  id="to-sgd-logo">
+        <section class="sgd-s-logo-display "  id="to-sgd-logo">
           <div class="sgd-gc">
 
             <div class="sgd-g-12">
@@ -157,91 +154,90 @@
         <section class="sgd-s-colors -off-white -card-shadow"  id="to-sgd-colors">
           <div class="sgd-gc">
 
-            <div class="sgd-g-12">
-              <h2 class="sgd-header -type -global">Colors</h2>
-            </div>
-
-            <div class="sgd-g-12">
-              <div class="sgd-header-tag">Primary</div>
-            </div>
-
-            <div class="sgd-row">
-              <div class="sgd-g-3 card">
-                <div class="sgd-color-card -pink"><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-3 card">
-                <div class="sgd-color-card -purple"><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-3 card">
-                <div class="sgd-color-card -orange"><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-3 card">
-                <div class="sgd-color-card -blue"><div class="body"></div><div class="shadow"></div></div>
+              <div class="sgd-g-12">
+                <h2 class="sgd-header -type -global">Colors</h2>
               </div>
 
-            </div>
-
-            <div class="sgd-g-12">
-              <div class="sgd-header-tag">Interaction</div>
-            </div>
-
-            <div class="sgd-row color-card-small">
-              <div class="sgd-g-2 card">
-                <div class="sgd-color-card -pink"><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-2 card">
-                <div class="sgd-color-card -pink-hover"><div class="sgd-header-tag">Hover</div><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-2 card">
-                <div class="sgd-color-card -pink-click"><div class="sgd-header-tag">Click</div><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-2 card">
-                <div class="sgd-color-card -blue"><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-2 card">
-                <div class="sgd-color-card -blue-hover"><div class="sgd-header-tag">Hover</div><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-2 card">
-                <div class="sgd-color-card -blue-click"><div class="sgd-header-tag">Click</div><div class="body"></div><div class="shadow"></div></div>
+              <div class="sgd-g-12">
+                <div class="sgd-header-tag">Primary</div>
               </div>
 
-            </div>
+              <div class="sgd-row">
+                <div class="sgd-g-3 card">
+                  <div class="sgd-color-card -pink"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-3 card">
+                  <div class="sgd-color-card -purple"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-3 card">
+                  <div class="sgd-color-card -orange"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-3 card">
+                  <div class="sgd-color-card -blue"><div class="body"></div><div class="shadow"></div></div>
+                </div>
 
-
-            <div class="sgd-g-12">
-              <div class="sgd-header-tag">Grey scale</div>
-            </div>
-
-            <div class="sgd-row color-card-small">
-
-              <div class="sgd-g-2 card ">
-                <div class="sgd-color-card -black"><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-2 card ">
-                <div class="sgd-color-card -white"><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-2 card">
-              <div class="sgd-color-card -grey1"><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-2 card">
-                <div class="sgd-color-card -grey2"><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-2 card">
-                <div class="sgd-color-card -grey3"><div class="body"></div><div class="shadow"></div></div>
-              </div>
-              <div class="sgd-g-2 card">
-                <div class="sgd-color-card -grey4"><div class="body"></div><div class="shadow"></div></div>
               </div>
 
-            </div>
+              <div class="sgd-g-12">
+                <div class="sgd-header-tag">Interaction</div>
+              </div>
 
+              <div class="sgd-row color-card-small">
+                <div class="sgd-g-2 card">
+                  <div class="sgd-color-card -pink"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-2 card">
+                  <div class="sgd-color-card -pink-hover"><div class="sgd-header-tag">Hover</div><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-2 card">
+                  <div class="sgd-color-card -pink-click"><div class="sgd-header-tag">Click</div><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-2 card">
+                  <div class="sgd-color-card -blue"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-2 card">
+                  <div class="sgd-color-card -blue-hover"><div class="sgd-header-tag">Hover</div><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-2 card">
+                  <div class="sgd-color-card -blue-click"><div class="sgd-header-tag">Click</div><div class="body"></div><div class="shadow"></div></div>
+                </div>
+
+              </div>
+
+              <div class="sgd-g-12">
+                <div class="sgd-header-tag">Grey scale</div>
+              </div>
+
+              <div class="sgd-row color-card-small">
+
+                <div class="sgd-g-2 card ">
+                  <div class="sgd-color-card -black"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-2 card">
+                <div class="sgd-color-card -grey1"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-2 card">
+                  <div class="sgd-color-card -grey2"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-2 card">
+                  <div class="sgd-color-card -grey3"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-2 card">
+                  <div class="sgd-color-card -grey4"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+                <div class="sgd-g-2 card ">
+                  <div class="sgd-color-card -white"><div class="body"></div><div class="shadow"></div></div>
+                </div>
+
+              </div>
 
           </div>
         </section>
 
+
         <!-- FONTS -->
 
-        <section class="sgd-s-typography" id="to-sgd-typography" >
+        <section class="sgd-s-typography  -light" id="to-sgd-typography" >
           <div class="sgd-gc">
             <div class="sgd-g-12">
               <h2 class="sgd-header -type -global">Fonts</h2>
@@ -275,6 +271,79 @@
           </div>
         </section>
 
+
+        <!-- BUTTON -->
+
+        <section class="sgd-s-buttons"  id="to-sgd-buttons">
+          <div class="sgd-gc">
+
+            <div class="sgd-g-12">
+              <h2 class="sgd-header -type -global">Buttons</h2>
+            </div>
+
+
+            <div class="sgd-row">
+              <div class="sgd-g-6">
+                <div><div class="sgd-header-tag">DEFAULT</div></div>
+                <a href="#" class="btn">Button</a>
+                <div><div class="sgd-header-tag">SECONDARY</div></div>
+                <a href="#" class="btn -secondary">Button</a>
+              </div>
+              
+              <div class="sgd-g-6">
+                <div><div class="sgd-header-tag">GHOST</div></div>
+                <a href="#" class="btn -ghost">Button</a>
+                <div><div class="sgd-header-tag">SECONDARY</div></div>
+                <a href="#" class="btn -secondary -ghost">Button</a>
+              </div>
+              <div class="sgd-g-6">
+                <div><div class="sgd-header-tag">Small</div></div>
+                <a href="#" class="btn -small">Button</a>
+                <div><div class="sgd-header-tag">Small secondary</div></div>
+                <a href="#" class="btn -small -secondary">Button</a>
+              </div>
+              <div class="sgd-g-6">
+                <div><div class="sgd-header-tag">Small ghost </div></div>
+                <a href="#" class="btn -small -ghost">Button</a>
+                <div><div class="sgd-header-tag">Small ghost secondary</div></div>
+                <a href="#" class="btn -small -ghost -secondary">Button</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- LINK -->
+
+        <section class="sgd-s-links  -light"  id="to-sgd-buttons">
+          <div class="sgd-gc">
+
+            <div class="sgd-g-12">
+              <h2 class="sgd-header -type -global">Link</h2>
+            </div>
+
+            <div class="sgd-g-12">
+              
+            </div>
+
+            <div class="sgd-row">
+              <div class="sgd-g-6">
+                <div><div class="sgd-header-tag">DEFAULT</div></div>
+                <a href="#">This is a default link</a>
+              </div>
+              
+              <div class="sgd-g-6">
+                <div><div class="sgd-header-tag">in text</div></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#" >Link in text</a> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit..</p>
+              </div>
+             
+            </div>
+
+          </div>
+        </section>
+
+
         <!-- PATTERNS -->
 
         <section class="sgd-s-colors -off-white "  id="to-sgd-patterns">
@@ -302,7 +371,6 @@
             </div>
           </div>
         </section>
-
 
 
         <!-- GRID -->
@@ -404,6 +472,7 @@
           </div>
         </section>
 
+
         <!-- ICONS -->
 
         <section class="sgd-s-icons "  id="to-sgd-icons">
@@ -432,6 +501,7 @@
 
           </div>
         </section>
+
 
         <!-- IMAGES -->
 
@@ -470,6 +540,72 @@
           </div>
         </section>
 
+
+        <!-- DARK MODE -->
+
+        <section class="sgd-s-links"  id="to-sgd-buttons">
+          
+              <div class="sgd-row">
+                <div class="sgd-gc">
+                  <div class="sgd-g-12">
+                    <h2 class="sgd-header -type -global">Dark mode</h2>
+                  </div>
+                  <div class="sgd-g-12">
+                    <div><div class="sgd-header-tag -large -rek">DEFAULT</div></div>
+                  </div>                  
+                </div>
+              </div>
+
+              <div class="sgd-s- sgd-row -off-white">
+                <div class="sgd-gc -g-center ">
+                  <div class="sgd-g-6 -text-center">
+                    <h2>Default mode</h2>
+                    <br>
+                  </div>
+                  <div class="sgd-g-6">
+                    <p>Lorem ipsum dolor sit amet, <a href="#" >Link in text</a> consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit..</p>
+                    <br>
+                    <div class="-text-center">
+                      <a href="#" class="btn  -small">Button</a> 
+                      <a href="#" class="btn -secondary -small">Button</a><br>
+                      <a href="#" class="btn -small -ghost">Button</a>
+                      <a href="#" class="btn -small -secondary -ghost">Button</a>
+                    </div>
+                    
+                  </div>  
+                </div>
+              </div>
+
+              <div class="sgd-row">
+                <div class="sgd-gc">
+                  <div class="sgd-g-12">
+                    <br>
+                    <div><div class="sgd-header-tag -large -rek">DARK MODE</div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sgd-s- sgd-row  -dark-mode ">
+                <div class="sgd-gc -g-center ">
+                  <div class="sgd-g-6 -text-center">
+                    <h2>Dark mode</h2>
+                    <br>
+                  </div>
+                  <div class="sgd-g-6">
+                    <p>Lorem ipsum dolor sit amet, <a href="#" >Link in text</a> consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit..</p>
+                    <br>
+                    <div class="-text-center">
+                      <a href="#" class="btn  -small">Button</a> 
+                      <a href="#" class="btn -secondary -small">Button</a><br>
+                      <a href="#" class="btn -small -ghost">Button</a>
+                      <a href="#" class="btn -small -secondary -ghost">Button</a>
+                    </div>
+                    
+                  </div>  
+                </div>
+              </div>         
+        </section>
+
     </div>
 
 
@@ -499,256 +635,110 @@ export default {
 @import "~/assets/scss/styleguide/styleguide-imports.scss";
 
 
-.eight-point-grid {
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 100vh;
-  display: block;
+    .eight-point-grid {
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      height: 100vh;
+      display: block;
 
-  .grid-col {
-    position: absolute;
-    width: 50%;
-    height: 100vh;
-    opacity: .4;
-  }
-
-  .center {
-    width: 2px;
-    background-color: red;
-    left: 50%;
-    margin-left: -2px;
-  }
-
-  .top {
-    width: 100%;
-    left: 0;
-    top: 0;
-    background: repeating-linear-gradient(
-      to bottom,
-      rgba(255,255,255,.14),
-      rgba(255,255,255,.14) 8px,
-      rgba(0,0,0,.12) 8px,
-      rgba(0,0,0,.12) 16px,
-      rgba(0,0,0,.03) 16px,
-      rgba(0,0,0,.03) 24px,
-      rgba(255,255,255,.14) 24px,
-      rgba(255,255,255,.14) 31px,
-      red 32px,
-      rgba(255,255,255,.14) 32px,
-      rgba(255,255,255,.14) 40px,
-      rgba(0,0,0,.12) 40px,
-      rgba(0,0,0,.12) 48px,
-      rgba(0,0,0,.03) 48px,
-      rgba(0,0,0,.03) 56px,
-      rgba(255,255,255,.14) 56px,
-      rgba(255,255,255,.14) 63px,
-      red 63px,
-      red 64px
-    );
-
-  }
-
-  .right {
-    background: repeating-linear-gradient(
-      to right,
-      rgba(255,255,255,.14),
-      rgba(255,255,255,.14) 8px,
-      rgba(0,0,0,.12) 8px,
-      rgba(0,0,0,.12) 16px,
-      rgba(0,0,0,.03) 16px,
-      rgba(0,0,0,.03) 24px,
-      rgba(255,255,255,.14) 24px,
-      rgba(255,255,255,.14) 31px,
-      red 32px,
-      rgba(255,255,255,.14) 32px,
-      rgba(255,255,255,.14) 40px,
-      rgba(0,0,0,.12) 40px,
-      rgba(0,0,0,.12) 48px,
-      rgba(0,0,0,.03) 48px,
-      rgba(0,0,0,.03) 56px,
-      rgba(255,255,255,.14) 56px,
-      rgba(255,255,255,.14) 63px,
-      red 63px,
-      red 64px
-    );
-    left: 50%;
-  }
-  .left {
-
-     background: repeating-linear-gradient(
-      to left,
-      rgba(255,255,255,.14),
-      rgba(255,255,255,.14) 8px,
-      rgba(0,0,0,.12) 8px,
-      rgba(0,0,0,.12) 16px,
-      rgba(0,0,0,.03) 16px,
-      rgba(0,0,0,.03) 24px,
-      rgba(255,255,255,.14) 24px,
-      rgba(255,255,255,.14) 31px,
-      red 32px,
-      rgba(255,255,255,.14) 32px,
-      rgba(255,255,255,.14) 40px,
-      rgba(0,0,0,.12) 40px,
-      rgba(0,0,0,.12) 48px,
-      rgba(0,0,0,.03) 48px,
-      rgba(0,0,0,.03) 56px,
-      rgba(255,255,255,.14) 56px,
-      rgba(255,255,255,.14) 63px,
-      red 63px,
-      red 64px
-    );
-
-    right: 50%;
-  }
-
-}
-
-
-    .process-chart {
-      margin: 0 20px 32px ;
-
-      display: none;
-
-      .row {
-        display: flex;
-        &.-direction-reverse {
-          flex-direction: row-reverse;
-        }
+      .grid-col {
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        opacity: .4;
       }
 
-      .bullet {
-        box-sizing: border-box;
-        border-radius: 2px;
-        flex-shrink: 0;
-        flex-grow: 1;
-        //font-size: 18px;
-        font-size: 13px;
-        background: $grey1;
-        margin: 0 .3% 6px;
-        height: 4em;
-        padding: 6px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        div {
-          color: $white;
-          font-weight: bold;
-          text-transform: uppercase;
-          text-align: center;
-          font-size: inherit;
-        }
+      .center {
+        width: 2px;
+        background-color: red;
+        left: 50%;
+        margin-left: -2px;
+      }
 
-         &.-small {
-          //opacity: .5;
-          background: $grey2;
-          font-size: 11px;
-          //font-size: 12px;
+      .top {
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: repeating-linear-gradient(
+          to bottom,
+          rgba(255,255,255,.14),
+          rgba(255,255,255,.14) 8px,
+          rgba(0,0,0,.12) 8px,
+          rgba(0,0,0,.12) 16px,
+          rgba(0,0,0,.03) 16px,
+          rgba(0,0,0,.03) 24px,
+          rgba(255,255,255,.14) 24px,
+          rgba(255,255,255,.14) 31px,
+          red 32px,
+          rgba(255,255,255,.14) 32px,
+          rgba(255,255,255,.14) 40px,
+          rgba(0,0,0,.12) 40px,
+          rgba(0,0,0,.12) 48px,
+          rgba(0,0,0,.03) 48px,
+          rgba(0,0,0,.03) 56px,
+          rgba(255,255,255,.14) 56px,
+          rgba(255,255,255,.14) 63px,
+          red 63px,
+          red 64px
+        );
 
-          div {
-            font-size: inherit;
-          }
-         }
+      }
 
-         &.-line {
-            background: none;
-            border: 2px solid $grey2;
-            div {
-              color: $grey2;
-            }
-         }
+      .right {
+        background: repeating-linear-gradient(
+          to right,
+          rgba(255,255,255,.14),
+          rgba(255,255,255,.14) 8px,
+          rgba(0,0,0,.12) 8px,
+          rgba(0,0,0,.12) 16px,
+          rgba(0,0,0,.03) 16px,
+          rgba(0,0,0,.03) 24px,
+          rgba(255,255,255,.14) 24px,
+          rgba(255,255,255,.14) 31px,
+          red 32px,
+          rgba(255,255,255,.14) 32px,
+          rgba(255,255,255,.14) 40px,
+          rgba(0,0,0,.12) 40px,
+          rgba(0,0,0,.12) 48px,
+          rgba(0,0,0,.03) 48px,
+          rgba(0,0,0,.03) 56px,
+          rgba(255,255,255,.14) 56px,
+          rgba(255,255,255,.14) 63px,
+          red 63px,
+          red 64px
+        );
+        left: 50%;
+      }
+      .left {
 
+         background: repeating-linear-gradient(
+          to left,
+          rgba(255,255,255,.14),
+          rgba(255,255,255,.14) 8px,
+          rgba(0,0,0,.12) 8px,
+          rgba(0,0,0,.12) 16px,
+          rgba(0,0,0,.03) 16px,
+          rgba(0,0,0,.03) 24px,
+          rgba(255,255,255,.14) 24px,
+          rgba(255,255,255,.14) 31px,
+          red 32px,
+          rgba(255,255,255,.14) 32px,
+          rgba(255,255,255,.14) 40px,
+          rgba(0,0,0,.12) 40px,
+          rgba(0,0,0,.12) 48px,
+          rgba(0,0,0,.03) 48px,
+          rgba(0,0,0,.03) 56px,
+          rgba(255,255,255,.14) 56px,
+          rgba(255,255,255,.14) 63px,
+          red 63px,
+          red 64px
+        );
 
-
-         &.-o-100 {
-          opacity: 1;
-         }
-
-         &.-w-12 {
-            width: 12%;
-            flex-grow: 0;
-         }
-         &.-w-15 {
-            width: 15%;
-            flex-grow: 0;
-         }
-         &.-w-20 {
-            width: 20%;
-            flex-grow: 0;
-         }
-         &.-w-25 {
-            width: 25%;
-            flex-grow: 0;
-         }
-         &.-w-30 {
-            width: 30%;
-            flex-grow: 0;
-         }
-
-         &.-mr-16 {
-          margin-right: 16.6%;
-         }
-
-         &.-ml-16 {
-          margin-left: 16.6%;
-         }
-
-         &.-mr-8 {
-          margin-right: 8%;
-         }
-
-         &.-ml-8 {
-          margin-left: 8%;
-         }
-
-         &.-mr-6 {
-          margin-right: 6%;
-         }
-
-         &.-ml-6 {
-          margin-left: 6%;
-         }
-
-         &.-mr-4 {
-          margin-right: 4%;
-         }
-
-         &.-ml-4 {
-          margin-left: 4%;
-         }
-
-
-
+        right: 50%;
       }
 
     }
-
-
-    // 768px
-    @media screen and (min-width: 768px)  {
-      .process-chart {
-        display: block;
-      }
-    }
-
-     // 1024px
-    @media screen and (min-width: 1024px)  {
-    .process-chart {
-      margin: 0 20px 32px ;
-      .row {
-        display: flex;
-        &.-direction-reverse {
-          flex-direction: row-reverse;
-        }
-      }
-      .bullet {
-        font-size: 18px;
-         &.-small {
-          font-size: 12px;
-         }
-      }
-    }
-  }
 
 
 

@@ -9,6 +9,9 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      class: 'no-touch'
+    },
     title: 'AT | Demo |  One pager',
     meta: [
       { charset: 'utf-8' },
@@ -21,12 +24,7 @@ module.exports = {
       { rel: 'icon', type: 'image/png', size: '16x16', href: '/favicon-16x16.png' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap' }
-    ],
-    script: [
-        { innerHTML: '{ window.prismic = { endpoint: "' + PrismicConfig.api + '"} }' },
-        { src: '//static.cdn.prismic.io/prismic.min.js' }
-    ],
-    __dangerouslyDisableSanitizers: ['script']
+    ]
   },
 
   /*
@@ -45,9 +43,6 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-  '~/plugins/link-resolver.js',
-  '~/plugins/html-serializer.js',
-  '~/plugins/prismic-vue.js',
   { src: "~/plugins/vue-waypoint.client.js", mode: 'client'},
     '~/plugins/svg4everybody'
   ],
@@ -56,14 +51,27 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@/modules/static',
+    '@/modules/crawler',
+    '@nuxtjs/prismic',
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
     '@nuxtjs/svg-sprite',
     'nuxt-purgecss',
+    'modules/twitter-feed',
+    // 'modules/linkedin-feed',
+    // 'modules/tweets-prismic',
     ['@nuxtjs/dotenv', { systemvars: true }],
     ['vue-scrollto/nuxt', { duration: 675 }],
     ['nuxt-gmaps', { key: process.env.GMAPS_KEY }]
   ],
+
+  prismic: {
+    endpoint: process.env.PRISMIC_API,
+    linkResolver: '@/plugins/link-resolver',
+    htmlSerializer: '@/plugins/html-serializer',
+    preview: '/preview/'
+  },
 
 
   styleResources: {

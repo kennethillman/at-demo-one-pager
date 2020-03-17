@@ -59,7 +59,7 @@
         </div>
 
     </div>
-  </section>
+</section>
 
 </template>
 
@@ -107,8 +107,7 @@ export default {
         flex-basis: 0;
         flex-grow: 1;
         position: relative;
-  
-    
+
       }
       .ref {
         font-style: normal;

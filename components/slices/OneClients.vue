@@ -58,9 +58,11 @@ export default {
       justify-content: center;
       flex-wrap: wrap;
       padding: 0 24px;
+      max-width: 1280px;
+      margin: 0 auto;
       figure {
         box-sizing: border-box;
-        padding: 3vw;
+        padding: 12px;
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 30%;
@@ -71,9 +73,18 @@ export default {
     .logos {
       flex-wrap: nowrap;
       figure {
+        padding: 24px;
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: initial;
+      }
+    }
+   }
+
+   @media screen and (min-width: 1024px)  {
+    .logos {
+      figure {
+        padding: 40px;
       }
     }
    }

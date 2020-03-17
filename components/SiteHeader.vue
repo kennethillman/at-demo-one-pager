@@ -1,7 +1,7 @@
 <template>
   <section class="site-header"> 
     
-    <!-- SITE LOGO -->
+    <!-- SITE HOME -->
     <figure class="site-home" @click="activeLink = undefined; addHashbang('#to-top')">
       <div v-scroll-to="'#to-top'" >
         <svg-icon class="logo" name="activetalents-filled" />
@@ -79,7 +79,6 @@ export default {
   },
   created() {
     this.clean(this.menuRaw)
-    
   }
 }
 </script>
